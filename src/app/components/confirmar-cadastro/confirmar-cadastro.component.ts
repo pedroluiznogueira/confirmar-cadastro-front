@@ -19,4 +19,8 @@ export class ConfirmarCadastroComponent implements OnInit {
     this.confirmarCadastro.confirmarCadastro();
   }
 
+  goToLink(url: string){
+    window.open(url, "_blank");
+  }
+
 }
