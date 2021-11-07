@@ -15,6 +15,6 @@ export class ConfirmarCadastroService {
       "email": email
     }
 
-    this.http.post("http://localhost:8090/confirmar-cadastro/confirmar", obj).subscribe();
+    this.http.post("https://confirmar-cadastro-api.herokuapp.com/confirmar-cadastro/confirmar", obj).subscribe();
   }
 }
