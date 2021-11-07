@@ -8,6 +8,8 @@ import { ConfirmarCadastroService } from 'src/app/services/confirmar-cadastro.se
 })
 export class ConfirmarCadastroComponent implements OnInit {
 
+  email?: string;
+
   constructor(
     private confirmarCadastro: ConfirmarCadastroService
   ) { }
@@ -16,7 +18,7 @@ export class ConfirmarCadastroComponent implements OnInit {
   }
 
   public emitirConfirmacao() {
-    this.confirmarCadastro.confirmarCadastro();
+    this.confirmarCadastro.confirmarCadastro(this.email!);
   }
 
   goToLink(url: string){

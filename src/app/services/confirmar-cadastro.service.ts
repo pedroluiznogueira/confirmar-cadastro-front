@@ -10,11 +10,11 @@ export class ConfirmarCadastroService {
     private http: HttpClient
   ) { }
 
-  public confirmarCadastro() {
-    let msg: any = {
-      "msg": "cadastro confirmado microservico & front"
+  public confirmarCadastro(email: string) {
+    let obj: any = {
+      "email": email
     }
 
-    this.http.post("http://localhost:8090/confirmar-cadastro/confirmar", msg).subscribe();
+    this.http.post("http://localhost:8090/confirmar-cadastro/confirmar", obj).subscribe();
   }
 }

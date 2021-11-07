@@ -126,7 +126,6 @@ html {
     display: inline-block;
     font-size: 16px;
     margin: 5px;
-    width: 85%;
     border: 2px solid #f6f6f6;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -139,7 +138,7 @@ html {
   
   input[type=text]:focus {
     background-color: #fff;
-    border-bottom: 2px solid #5fbae9;
+    border-bottom: 2px solid #e056ed;
   }
   
   input[type=text]:placeholder {
@@ -277,4 +276,48 @@ a {
 input { 
     font-family: 'Montserrat';
     cursor: pointer;
+}
+
+.controles button {
+  width: 80px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.pedido {
+  margin-top: 40px;
+  width: 240px;
+  height: 140px;
+  border: 1px solid black;
+  border-radius: 7px;
+  padding: 20px;
+}
+
+#btn-pedido{
+  border: #222;
+  color: #fff;
+  background-color: #222;
+  cursor: pointer;
+}
+
+#btn-pedido:hover{
+  border: #111;
+  background-color: #111;
+  font-weight: 600;
+}
+
+.input {
+  border: 1px solid black;
+  width: 200px;
+  height: 30px;
+}
+
+.controles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+  height: 150px;
 }
